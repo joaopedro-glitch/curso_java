@@ -1,0 +1,31 @@
+package curso_progamacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Entrada {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		String x;
+		x = sc.next();
+		
+		System.out.println("Voce digitou: " + x);
+		
+		int y;
+		y = sc.nextInt();
+		
+		System.out.println("Voce digitou: " + y);
+		
+		Locale.setDefault(Locale.US);
+		float z;
+		z = sc.nextFloat();
+		
+		System.out.println("Voce digitou: " + z);
+		
+		sc.close();
+	}
+
+}

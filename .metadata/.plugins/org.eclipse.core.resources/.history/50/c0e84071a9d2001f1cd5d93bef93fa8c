@@ -1,0 +1,32 @@
+/*Leia um valor inteiro X (1 <= X <= 1000). Em seguida mostre os ímpares de 1 até X, um valor por linha, inclusive o
+X, se for o caso.*/
+
+package estruturas_de_repeticao;
+
+import java.util.Scanner;
+
+public class For_exc1 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x;
+		
+		System.out.printf("Digite um numero inteiro entre 1 e 1000: ");
+		x = sc.nextInt();
+		
+		for(int i = 0; i <= x; i++) {
+			
+			if(x % 2 != 0) {
+				
+				System.out.println(i);
+				
+			}		
+
+		}
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,19 @@
+package entities;
+
+public class Employee {
+
+	public String name;
+	public double grossSalary;
+	public double tax;
+	public double finalSalary;
+	
+	public double netSalary() {
+		return grossSalary - tax;
+	}
+	
+	public void increaseSalary(double percentage) {
+		double percent = percentage/100;
+		finalSalary = netSalary() + percent;
+	}
+	
+}
